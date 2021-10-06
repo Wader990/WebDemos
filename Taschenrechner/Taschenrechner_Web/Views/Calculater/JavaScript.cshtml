@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "JavaScript";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+<head>
+    <style>
+        .rechnerTasten input {
+            margin: 2px;
+            padding: 2px;
+            font-size: 300%;
+        }
+
+        #Delete {
+            margin: 4px;
+        }
+
+        #Ausgabe {
+            margin: 5px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rechnerTasten row">
+
+        <div class="col-3" id="Ausgabe" style="border:3px solid black">
+            das Ergebnis xxxxxxxx
+        </div>
+
+        <input type="button" id="Delete" style="background-color:brown" class=" col-1" name="delete" value="C">
+    </div>
+
+    <div class="rechnerTasten row">
+        <input type="button" style="background-color:burlywood" class="col-1" name="7" value="7">
+        <input type="button" style="background-color:burlywood" class="col-1" name="8" value="8">
+        <input type="button" style="background-color:burlywood" class="col-1" name="9" value="9">
+        <input type="button" style="background-color:darkseagreen" class="col-1" name="+" value="+">
+    </div>
+
+    <div class="rechnerTasten row">
+        <input type="button" style="background-color:burlywood" class="col-1" name="4" value="4">
+        <input type="button" style="background-color:burlywood" class="col-1" name="5" value="5">
+        <input type="button" style="background-color:burlywood" class="col-1" name="6" value="6">
+        <input type="button" style="background-color:darkseagreen" class="col-1" name="-" value="-">
+    </div>
+
+    <div class="rechnerTasten row">
+        <input type="button" style="background-color:burlywood" class="col-1" name="1" value="1">
+        <input type="button" style="background-color:burlywood" class="col-1" name="2" value="2">
+        <input type="button" style="background-color:burlywood" class="col-1" name="3" value="3">
+        <input type="button" style="background-color:darkseagreen" class="col-1" name="*" value="*">
+    </div>
+
+    <div class="rechnerTasten row">
+        <input type="button" style="background-color:burlywood" class="col-1" name="0" value="0">
+        <input type="button" style="background-color:darkseagreen" class="col-1" name="," value=",">
+        <input type="button" style="background-color:darkseagreen" class="col-1" name="%" value="%">
+        <input type="button" style="background-color:darkslategrey" class="col-1" name="=" value="=">
+    </div>
+
+</body>
+
+

@@ -1,0 +1,40 @@
+﻿@model Taschenrechner_Web.Models.ResultViewModel
+@{
+    ViewBag.Title = "Result";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+
+
+<h4>Das Ergebnis ist : </h4>
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-2 col-md-1">
+            <h2>
+                @Html.DisplayTextFor(model => model.Input1)
+            </h2>
+        </div>
+
+        <div class="col-sm-2 col-md-1">
+            <h2>
+                @Html.DisplayTextFor(model => model.Operator)
+            </h2>
+        </div>
+
+        <div class="col-sm-2 col-md-1">
+            <h2>
+                @Html.DisplayTextFor(model => model.Input2)   =
+            </h2>
+        </div>
+        
+        <div class="col-sm-2 col-md-1">
+            <h2>
+                @Html.DisplayTextFor(model => model.Result)
+            </h2>
+        </div>
+
+    </div>
+</div>
+
+
